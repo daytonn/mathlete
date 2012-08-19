@@ -2,6 +2,7 @@ var Mathlete = (function() {
   //= require "_zepto"
   //= require "_underwear"
   //= require "_number"
+  //= require "_moment"
 
   var Mathlete = {
       timesTable: {},
@@ -19,8 +20,8 @@ var Mathlete = (function() {
 
       createTableForInteger: function(i) {
         (9).times(function(n) {
-          Mathlete.createValueForKey(Mathlete.timesTable, i, n, function(a, b) { return null });
-          Mathlete.createValueForKey(Mathlete.scoreBoard, i, n);
+          Mathlete.createValueForKey(Mathlete.timesTable, i, n);
+          Mathlete.createValueForKey(Mathlete.scoreBoard, i, n, function(a, b) { return null });
           Mathlete.questions.push(i + 'x' + n);
         });
       },
@@ -35,6 +36,9 @@ var Mathlete = (function() {
       },
 
       reset: function () {
+        this.timesTable = {};
+        this.scoreBoard = {};
+        this.questions = [];
         (9).times(Mathlete.createTableForInteger);
       }
 

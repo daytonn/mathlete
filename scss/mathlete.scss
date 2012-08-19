@@ -1,0 +1,110 @@
+@import "compass";
+
+p {
+  margin: 0;
+}
+
+.text-line {
+  height: 45px;
+  line-height: 45px;
+  font-size: 2em;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+}
+
+#stats {
+  overflow: hidden;
+  position: relative;
+  @extend .text-line;
+  padding: .5em 0;
+
+
+  .cards-remaining {
+    float: left;
+  }
+
+  .elapsed-time {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .score {
+    float: right;
+  }
+}
+
+#container {
+  float: left;
+  overflow: hidden;
+}
+
+.question {
+  @extend .text-line;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.display {
+  font-size: 32px;
+  display: inline-block;
+  border: dashed 4px #CCC;
+  height: 50px;
+  padding: 0 0.5em;
+  line-height: 50px;
+  vertical-align: middle;
+  min-width: 50px;
+}
+
+#message {
+  @extend .text-line;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.keypad {
+  background: #cccccc;
+  float: left;
+
+  .number {
+    @include border-radius(15px);
+    background: #333;
+    color: white;
+    display: inline-block;
+    font-size: 4em;
+    height: 100px;
+    line-height: 100px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100px;
+  }
+}
+
+#controls {
+  padding: 2em 0;
+  clear: left;
+  display: block;
+}
+
+button {
+  width: 150px;
+  height: 100px;
+  @include border-radius(15px);
+  border: solid 1px #cccccc;
+  font-size: 2em;
+  &.answer-button {
+    float: right;
+  }
+
+  &.clear-button {
+    float: left;
+  }
+
+}

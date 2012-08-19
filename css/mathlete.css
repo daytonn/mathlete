@@ -1,0 +1,123 @@
+/* line 3, ../scss/mathlete.scss */
+p {
+  margin: 0;
+}
+
+/* line 7, ../scss/mathlete.scss */
+.text-line, #stats, .question, #message {
+  height: 45px;
+  line-height: 45px;
+  font-size: 2em;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+}
+
+/* line 16, ../scss/mathlete.scss */
+#stats {
+  overflow: hidden;
+  position: relative;
+  padding: .5em 0;
+}
+/* line 23, ../scss/mathlete.scss */
+#stats .cards-remaining {
+  float: left;
+}
+/* line 27, ../scss/mathlete.scss */
+#stats .elapsed-time {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 33, ../scss/mathlete.scss */
+#stats .score {
+  float: right;
+}
+
+/* line 38, ../scss/mathlete.scss */
+#container {
+  float: left;
+  overflow: hidden;
+}
+
+/* line 43, ../scss/mathlete.scss */
+.question {
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* line 49, ../scss/mathlete.scss */
+.display {
+  font-size: 32px;
+  display: inline-block;
+  border: dashed 4px #CCC;
+  height: 50px;
+  padding: 0 0.5em;
+  line-height: 50px;
+  vertical-align: middle;
+  min-width: 50px;
+}
+
+/* line 60, ../scss/mathlete.scss */
+#message {
+  text-align: center;
+}
+
+/* line 65, ../scss/mathlete.scss */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 70, ../scss/mathlete.scss */
+.keypad {
+  background: #cccccc;
+  float: left;
+}
+/* line 74, ../scss/mathlete.scss */
+.keypad .number {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background: #333;
+  color: white;
+  display: inline-block;
+  font-size: 4em;
+  height: 100px;
+  line-height: 100px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100px;
+}
+
+/* line 90, ../scss/mathlete.scss */
+#controls {
+  padding: 2em 0;
+  clear: left;
+  display: block;
+}
+
+/* line 96, ../scss/mathlete.scss */
+button {
+  width: 150px;
+  height: 100px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  border: solid 1px #cccccc;
+  font-size: 2em;
+}
+/* line 102, ../scss/mathlete.scss */
+button.answer-button {
+  float: right;
+}
+/* line 106, ../scss/mathlete.scss */
+button.clear-button {
+  float: left;
+}
